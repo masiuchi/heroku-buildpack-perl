@@ -53,7 +53,7 @@ if ! [ -e $LOCAL_DEPS/bin/carton ]; then
 fi
 
 echo "-----> Installing dependencies with Carton"
-carton install --deployment 2>&1 | indent
+carton install 2>&1 | indent
 
 # TODO support different server type via Procfile
 echo "-----> Installing Starman"
